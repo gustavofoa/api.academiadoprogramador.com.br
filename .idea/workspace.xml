@@ -10,16 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c28c17f6-8780-4b62-a0d6-d0cf51c7f539" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/UsersController.js" afterDir="false" />
+    <list default="true" id="c28c17f6-8780-4b62-a0d6-d0cf51c7f539" name="Default Changelist" comment="Add first controller (Users)">
+      <change afterPath="$PROJECT_DIR$/controller/UserController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/UserService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/UsersController.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/error.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectId" id="1itMdqzNES3MXSx6HJOiX5uUt3X" />
   <component name="ProjectViewState">
@@ -53,8 +50,16 @@
       <option name="presentableId" value="Default" />
       <updated>1602722524463</updated>
       <workItem from="1602722525573" duration="388000" />
-      <workItem from="1602722922351" duration="603000" />
+      <workItem from="1602722922351" duration="1840000" />
     </task>
+    <task id="LOCAL-00001" summary="Add first controller (Users)">
+      <created>1602723573255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602723573255</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,6 +75,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add first controller (Users)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add first controller (Users)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2056" y="-222" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602722950720">
