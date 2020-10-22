@@ -2,7 +2,7 @@ import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
 
 
 @Entity("aluno")
-export class User {
+export class Aluno {
 
     @PrimaryGeneratedColumn()
     id: Number

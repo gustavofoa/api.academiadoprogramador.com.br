@@ -10,32 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c28c17f6-8780-4b62-a0d6-d0cf51c7f539" name="Default Changelist" comment="Add first service (Users)">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database.providers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user.providers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/jest-e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c28c17f6-8780-4b62-a0d6-d0cf51c7f539" name="Default Changelist" comment="Create /users/me endpoint using nestjs.">
+      <change afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/UserController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/UserService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database.providers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/database.providers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/aluno/aluno.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/aluno/aluno.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/aluno/aluno.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/aluno/aluno.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.providers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/aluno/aluno.providers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/aluno/aluno.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.e2e-spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +47,20 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.67" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\gfurtado\Projects\api.academiadoprogramador.com.br\node_modules\prettier" />
     <property name="ts.external.directory.path" value="C:\Users\gfurtado\Projects\api.academiadoprogramador.com.br\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gfurtado\Projects\api.academiadoprogramador.com.br\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gfurtado\Projects\api.academiadoprogramador.com.br\src\aluno" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602722524463</updated>
       <workItem from="1602722525573" duration="388000" />
-      <workItem from="1602722922351" duration="9946000" />
+      <workItem from="1602722922351" duration="11295000" />
     </task>
     <task id="LOCAL-00001" summary="Add first controller (Users)">
       <created>1602723573255</created>
@@ -92,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602724788086</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create /users/me endpoint using nestjs.">
+      <created>1603326217423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603326217423</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +115,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add first controller (Users)" />
     <MESSAGE value="Add first service (Users)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add first service (Users)" />
+    <MESSAGE value="Create /users/me endpoint using nestjs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create /users/me endpoint using nestjs." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2056" y="-222" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602722950720">

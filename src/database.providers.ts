@@ -1,5 +1,5 @@
 
-import { createConnection } from 'typeorm';
+import { createConnection } from 'typeorm'; // Object-Relational Mapping
 
 export const databaseProviders = [
     {
