@@ -1,8 +1,8 @@
 
 import { Connection } from 'typeorm';
-import { Aluno } from './aluno.entity';
+import { Aluno } from './alunos.entity';
 
-export const alunoProviders = [
+export const alunosProviders = [
     {
         provide: 'ALUNO_REPOSITORY',
         useFactory: (connection: Connection) => connection.getRepository(Aluno),

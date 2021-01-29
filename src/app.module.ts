@@ -1,7 +1,13 @@
 import { Module } from '@nestjs/common';
-import {AlunoModule} from "./aluno/aluno.module";
+import { AlunosModule } from "./alunos/alunos.module";
+import {RootController} from "./root.controller";
 
 @Module({
-  imports: [AlunoModule],
+  imports: [
+      AlunosModule
+  ],
+    controllers: [
+        RootController
+    ],
 })
 export class AppModule {}
