@@ -12,7 +12,8 @@ export const databaseProviders = [
             password: process.env.DB_AP_PASSWORD,
             database: process.env.DB_AP_DATABASE,
             entities: ['dist/**/*.entity.js'],
-            synchronize: true,
+            synchronize: false,
+            migrationsRun: false
         }),
     },
 ];

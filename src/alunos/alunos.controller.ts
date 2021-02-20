@@ -1,6 +1,7 @@
 import { Controller, Get, HttpCode, Post, Req } from '@nestjs/common';
 import { AlunosService } from './alunos.service';
 import { Request } from 'express';
+import {Aluno} from "./alunos.entity";
 
 @Controller("alunos")
 export class AlunosController {
@@ -17,19 +18,6 @@ export class AlunosController {
     return this.alunosService.listar();
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
   @Post("hotmart")
   cadastra(@Req() request: Request) {
 
@@ -37,7 +25,11 @@ export class AlunosController {
 
     console.log(request.body);
 
-    return "Recebemos";
+    const aluno: Aluno = new Aluno();
+    aluno.nome = request.body.name;
+    aluno.email = request.body.email;
+
+    this.alunosService.save(aluno);
 
   }
 

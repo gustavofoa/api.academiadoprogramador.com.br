@@ -19,16 +19,6 @@ export class RootController {
 
 
 
-
-
-
-
-
-
-
-
-
-
   @Post("hotmart")
   cadastra(@Req() request: Request) {
 
