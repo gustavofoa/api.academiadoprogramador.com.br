@@ -1,5 +1,6 @@
-import { Controller, Get, HttpCode, Post, Req } from '@nestjs/common';
+import {Controller, Get, HttpCode, Post, Req, UseGuards} from '@nestjs/common';
 import { FaixasService } from './faixas.service';
+import {AlunosGuard} from "../auth/alunos.guard";
 
 @Controller("faixas")
 export class FaixasController {
@@ -11,6 +12,7 @@ export class FaixasController {
   }
 
   @Get()
+  @UseGuards(AlunosGuard)
   listar() {
     console.log('listando faixas')
     return this.faixasService.listar();
