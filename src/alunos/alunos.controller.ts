@@ -29,7 +29,7 @@ export class AlunosController {
     aluno.nome = request.body.name;
     aluno.email = request.body.email;
 
-    this.alunosService.save(aluno);
+    this.alunosService.create(aluno);
 
   }
 

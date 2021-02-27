@@ -1,4 +1,4 @@
-import {Column, Entity, ManyToOne, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn} from "typeorm";
 import {Faixa} from "../faixas/faixas.entity";
 
 
@@ -8,10 +8,13 @@ export class Aluno {
     @PrimaryGeneratedColumn()
     id: Number
     @Column({ length: 255 })
-    nome: String
+    nome: string
     @Column({ length: 255 })
-    email: String
-    @ManyToOne(type => Faixa)
+    senha: string
+    @Column({ length: 255 })
+    email: string
+    @ManyToOne(type => Faixa )
+    @JoinColumn({ name: "faixa_atual" })
     faixa: Faixa
 
     constructor (){

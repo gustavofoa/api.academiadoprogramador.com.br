@@ -3,6 +3,7 @@ import { AlunosController } from './alunos.controller';
 import { AlunosService } from './alunos.service';
 import { databaseProviders } from "../database.providers";
 import {alunosProviders} from "./alunos.providers";
+import {EmailService} from "./email.service";
 
 @Module({
   imports: [],
@@ -11,6 +12,7 @@ import {alunosProviders} from "./alunos.providers";
   ],
   providers: [
       AlunosService,
+      EmailService,
     ...databaseProviders,
     ...alunosProviders
   ],

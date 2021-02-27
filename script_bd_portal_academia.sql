@@ -19,8 +19,9 @@ insert into faixa(ordem, nome, cor) VALUES (5, 'Faixa Preta', '#000');
 create table aluno(
     id int primary key auto_increment,
     email varchar(255) not null unique key,
+    senha varchar(255) not null,
     nome varchar(255) not null,
-    faixa_atual int not null,
+    faixa_atual int not null default 1,
     foreign key (faixa_atual) references faixa(ordem)
 );
 
