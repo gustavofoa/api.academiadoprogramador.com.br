@@ -1,7 +1,7 @@
 import {Inject, Injectable} from '@nestjs/common';
 import { Aluno } from "./alunos.entity";
 import { Repository } from "typeorm";
-import {EmailService} from "./email.service";
+import {EmailService} from "../shared/email.service";
 const sha1 = require('sha1');
 
 @Injectable()
@@ -41,7 +41,7 @@ export class AlunosService {
                             <br/>
                             Seja muito bem vindo à <strong>{ Academia do Programador }</strong>!<br/>
                             <p>Estamos MUITO felizes em ter você aqui conosco.
-                            E esperamos que aproveite tudo o que a { Academia do Programador }  pode te proporcionar!</>
+                            E esperamos que aproveite tudo o que a { Academia do Programador }  pode te proporcionar!</p>
     
                             <p>Este é o endereço do portal do aluno: <a href=https://portal.academiadoprogramador.com.br/login>https://portal.academiadoprogramador.com.br/login</a></p>
                             E aqui estão os seus dados de acesso:<br/>
@@ -49,7 +49,7 @@ export class AlunosService {
                             Senha Temporária: <strong>${senhaTemporaria}</strong>
                             <br/>
                             
-                            <strong>Importante!!!</strong> Altere a sua senha quando fizer o seu primeiro acesso.<br/>
+                            <p><strong>Importante!!!</strong> Altere a sua senha quando fizer o seu primeiro acesso.</p>
                             
                             <p>Qualquer dúvida, basta responder este e-mail...</p>
     

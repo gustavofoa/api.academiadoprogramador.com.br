@@ -3,16 +3,15 @@ import { AlunosController } from './alunos.controller';
 import { AlunosService } from './alunos.service';
 import { databaseProviders } from "../database.providers";
 import {alunosProviders} from "./alunos.providers";
-import {EmailService} from "./email.service";
+import {SharedModule} from "../shared/shared.module";
 
 @Module({
-  imports: [],
+  imports: [SharedModule],
   controllers: [
       AlunosController
   ],
   providers: [
       AlunosService,
-      EmailService,
     ...databaseProviders,
     ...alunosProviders
   ],
